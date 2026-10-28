@@ -1,2 +1,6 @@
-git clone https://github.com/ВАШ_НИК/formula2code.git
-cd formula2code
+python -m venv .venv
+source .venv/bin/activate        # Linux/macOS
+# .venv\Scripts\activate         # Windows
+
+pip install latex2sympy2 sympy numpy pytest
+pip freeze > requirements.txt
